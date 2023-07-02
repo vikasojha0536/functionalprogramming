@@ -98,4 +98,12 @@ Aggregation vs composition
 ![img_29.png](img_29.png)
 ![img_30.png](img_30.png)
 
+## Closure
+![img_31.png](img_31.png)
+![img_32.png](img_32.png)
+![img_33.png](img_33.png)
+
+## Currying
+![img_34.png](img_34.png)
+
 
