@@ -1,5 +1,8 @@
 # functionalprogramming
 
+In imperative coding we do how to do it
+In functional programming we only care what to do not how
+
 ![img_1.png](img_1.png)
 
 ![img.png](img.png)
@@ -76,5 +79,23 @@ and then after issueReward call the same will be 15 thats a side effect
 
 ## To Achieve Referential transparency we need immutable data
 
+
+## Functional programming
+![img_24.png](img_24.png)
+
+Five main functional interfaces
+![img_25.png](img_25.png)
+
+## High order functions
+![img_26.png](img_26.png)
+
+![img_27.png](img_27.png)
+
+## Point free programming
+![img_28.png](img_28.png)
+
+Aggregation vs composition
+![img_29.png](img_29.png)
+![img_30.png](img_30.png)
 
 
