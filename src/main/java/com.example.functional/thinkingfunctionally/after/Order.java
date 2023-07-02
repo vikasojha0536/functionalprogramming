@@ -3,23 +3,13 @@ package com.example.functional.thinkingfunctionally.after;
 
 public class Order {
 
-    private OrderStatus orderStatus;
+    public final OrderStatus orderStatus;
 
-    private Integer orderRewards;
+    public final Integer orderRewards;
 
-    public OrderStatus getOrderStatus() {
-        return orderStatus;
-    }
-
-    public void setOrderStatus(OrderStatus orderStatus) {
+    public Order(OrderStatus orderStatus, Integer orderRewards) {
         this.orderStatus = orderStatus;
-    }
-
-    public Integer getOrderRewards() {
-        return orderRewards;
-    }
-
-    public void setOrderRewards(Integer orderRewards) {
         this.orderRewards = orderRewards;
     }
+
 }

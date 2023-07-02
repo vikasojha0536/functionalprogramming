@@ -72,6 +72,9 @@ check below, if we do customer.getRewardBalance() it will be 10 first time
 and then after issueReward call the same will be 15 thats a side effect
 ![img_22.png](img_22.png)
 
-![img_23.png](img_23.png)c
+![img_23.png](img_23.png)
+
+## To Achieve Referential transparency we need immutable data
+
 
 
