@@ -9,7 +9,8 @@ public class Reduction {
     public static void main(String[] args) {
         List<String> letters = Arrays.asList("a", "b", "c");
         StringBuilder identity = new StringBuilder();
-        String reduce = letters.stream().reduce(identity, StringBuilder::append, StringBuilder::append)
+        String reduce = letters.stream().reduce(identity, (stringBuilder, str) -> stringBuilder.append(str),
+                                                (stringBuilder1, s) -> stringBuilder1.append(s))
                 .toString();
         System.out.println(reduce);
 
@@ -17,7 +18,7 @@ public class Reduction {
         Supplier<StringBuilder> supplier = StringBuilder::new;
         String result = letters
                 .stream()
-                .collect(supplier, StringBuilder::append, StringBuilder::append)
+                .collect(supplier, (stringBuilder, str) -> stringBuilder.append(str), (stringBuilder1, s) -> stringBuilder1.append(s))
                 .toString();
         System.out.println("Result: " + result);
 
