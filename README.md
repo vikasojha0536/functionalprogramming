@@ -106,4 +106,19 @@ Aggregation vs composition
 ## Currying
 ![img_34.png](img_34.png)
 
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    
+    dotcom->>iframe: loads html w/ iframe url
+    Note right of dotcom: ```json{<br/>  "references" : [ {<br/>    "id" : "vsUCBDmXYOgMyoqSXMhrOO",<br/>    "type" : "MASKEDPAN"<br/>  }, {<br/>    "id" : "SuTfGRIqfyYbYWeAmsMzeW",<br/>    "type" : "MASKEDPAN"<br/>  } ],<br/>  "id" : "XCXPCKxFsnTVAPrsWKAR",<br/>  "label" : "DlVmMChuPvXcXhoBG",<br/>  "currency" : "RvUyBRfSUriwruMwpmKWkfEVyETIH",<br/>  "holder" : {<br/>    "firstName" : "VJqjssXYAaNusLtjntQcYcCNAGqJQG",<br/>    "lastName" : "qEGdfSUWKzpziGXiWAumOQDji",<br/>    "title" : "UFoLjVCf"<br/>  }<br/>}```
+    iframe->>viewscreen: request template
+    participant viewscreen
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+
 
